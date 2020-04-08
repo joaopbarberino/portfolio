@@ -1,2 +1,2 @@
 # portfolio
-This is a site to describe who I am, for professional purposes.
+This is a site to describe who I am and what I do, for professional purposes.
