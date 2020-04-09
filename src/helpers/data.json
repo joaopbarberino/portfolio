@@ -1,0 +1,58 @@
+{
+    "en": {
+        "header": [
+            {
+                "text": "Home",
+                "link": "#home"
+            },
+            {
+                "text": "Who am I?",
+                "link": "#who"
+            },
+            {
+                "text": "Skills",
+                "link": "#skills"
+            },
+            {
+                "text": "Projects",
+                "link": "#projects"
+            }
+        ],
+        "home": {
+            "imgTitle": "My picture!",
+            "description": [
+                "Hello! I'm <span>João</span>, Fullstack Web Developer and a wannabe Game Designer.",
+                "Learn more about me and my work here."
+            ],
+            "button": "Let's go!"
+        }
+    },
+    "pt": {
+        "header": [
+            {
+                "text": "Home",
+                "link": "#home"
+            },
+            {
+                "text": "Quem sou eu?",
+                "link": "#who"
+            },
+            {
+                "text": "Habilidades",
+                "link": "#skills"
+            },
+            {
+                "text": "Projetos",
+                "link": "#projects"
+            }
+        ],
+        "home": {
+            "imgTitle": "Minha foto!",
+            "description": [
+                "Olá! Eu sou o <span>João</span>, Fullstack Web Developer e futuro Game Designer.",
+                "Conheça mais de mim e do meu trabalho aqui."
+            ],
+            "button": "Vamos!"
+        }
+    }
+}

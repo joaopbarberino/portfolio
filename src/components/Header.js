@@ -1,18 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import styled from 'styled-components';
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
   Nav,
   NavItem,
   NavLink,
   Container
 } from 'reactstrap';
-import styled from 'styled-components';
-import colors from '../helpers/colors';
+import AppContext from './AppContext';
+import data from '../helpers/data.json';
+import { colors, breakpoints } from '../helpers/styles';
 
 const StyledNavbarContainer = styled(Container)`
+  font-family: 'Quicksand', sans-serif;
   .navbar {
+    background-color: ${colors.dark};
     padding: 0;
 
     .nav-item {
@@ -24,15 +27,22 @@ const StyledNavbarContainer = styled(Container)`
           font-size: 14pt;
       }
       
-      &:hover {
+      &:hover:not(.mobile-language-button) {
         padding: 20px 25px;
 
         a {
-          color: white;
+          color: ${colors.light};
           font-size: 16pt;
         }
         background-color: ${colors.pink};
       }
+    }
+
+    .mobile-language-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      list-style: none;
     }
   }
 
@@ -42,7 +52,7 @@ const StyledNavbarContainer = styled(Container)`
 `;
 
 const StyledNavbarToggler = styled.div`
-  @media (max-width: 767px) {
+  @media (max-width: ${breakpoints.mobileMax}) {
     margin: 20px;
     padding-top: 5px;
     cursor: pointer;
@@ -77,15 +87,16 @@ const StyledNavbarToggler = styled.div`
   }
 `;
 
+const Header = () => {
+  const { language, toggleLanguage, mobile } = useContext(AppContext);
 
-const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => mobile ? setIsOpen(!isOpen) : false;
 
   return (
     <StyledNavbarContainer fluid>
-      <Navbar color={colors.dark} expand='md' dark fixed='top'>
+      <Navbar color={colors.dark} expand='md' fixed='top'>
         <Container>
           <StyledNavbarToggler onClick={toggle}>
             <div className={isOpen ? 'animation1' : 'bar1'} />
@@ -95,23 +106,34 @@ const Header = (props) => {
 
           <Collapse isOpen={isOpen} navbar>
             <Nav className='w-100 justify-content-between' navbar>
-              <NavItem>
-                <NavLink href='#home'>Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='#who'>Who am I?</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='#skills'>Skills</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='#projects'>Projects</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href='#projects'>PT</NavLink>
+              {
+                data[language].header.map((nav, key) => {
+                  return (
+                    <NavItem key={key}>
+                      <NavLink href={nav.link} onClick={toggle}>{nav.text}</NavLink>
+                    </NavItem>
+                  );
+                })
+              }
+
+              <NavItem
+                className='d-none d-md-block'
+                onClick={() => toggleLanguage()}
+              >
+                <NavLink href='#projects'>
+                  {language === 'en' ? 'PT' : 'EN'}
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>
+          <NavItem
+            className='d-md-none mobile-language-button'
+            onClick={() => toggleLanguage()}
+          >
+            <NavLink href='#projects'>
+              {language === 'en' ? 'PT' : 'EN'}
+            </NavLink>
+          </NavItem>
         </Container>
       </Navbar>
     </StyledNavbarContainer>
