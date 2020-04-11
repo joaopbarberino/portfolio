@@ -63,10 +63,6 @@ const StyledDescription = styled.div`
     p {
         margin: 0;
     }
-
-    span {
-        color: ${colors.lightPink};
-    }
 `;
 
 const Home = () => {

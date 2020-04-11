@@ -25,6 +25,17 @@
                 "Learn more about me and my work here."
             ],
             "button": "Let's go!"
+        },
+        "who": {
+            "title": "Who am I?",
+            "text": [
+                "My name is <span>João Pedro Barberino</span>, <span>19</span> years old, living in <span>São Paulo - Brazil</span> and have been coding for about <span>4</span> years.",
+                "From <span>2015</span> to <span>2017</span> I made a Technical High School on <span>Industrial Automation</span> and didn't willed to follow up on career, but had my first contacts with code: studying <span>Ladder</span>, <span>Assembly</span> and <span>C</span>, what gave me a lot of logical thinking.",
+                "On <span>2018</span> I started a Applied Sciences in <span>Digital Games</span> course on Senac-SP, where I've been learning <span>Java</span>, <span>Python</span> and <span>C#</span> (with <span>Unity3D</span>).",
+                "On <span>2019</span>, aside college, I've entered on <span>Facebook's Estação Hack</span> project, where I've learned the basics and essentials for web development: <span>HTML5</span>, <span>CSS3</span>, <span>Javascript</span> and <span>Python</span> with <span>Django</span>, my first framework.",
+                "Thereafter, I've been admitted at <span>JP7</span> as <span>Fullstack Web Developer</span> intern, where I started to work on <span>big player's</span> projects where I learned and acquired proficiency on <span>Javascript</span>, <span>PHP</span>, <span>modern CSS</span> and a bunch of their edgy tecnologies to build an website, such as: <span>Node</span>, <span>Express</span>, <span>React</span>, <span>Redux</span>, <span>Next.js</span>, <span>Laravel</span>, <span>Sass</span>, <span>Bootstrap</span>, among others.",
+                "The great goal of my <span>carreer</span> is to work with <span>game development</span>, but until there, I'll keep giving my total <span>dedication</span> to provide the <span>best solutions</span> to our <span>clients</span> and to learn the new <span>high-end technologies.</span>"
+            ]
         }
     },
     "pt": {
@@ -53,6 +64,17 @@
                 "Conheça mais de mim e do meu trabalho aqui."
             ],
             "button": "Vamos!"
+        },
+        "who": {
+            "title": "Quem sou eu?",
+            "text": [
+                "Meu nome é <span>João Pedro Barberino</span>, tenho <span>19</span> anos, vivo em <span>São Paulo - Brasil</span> e programo há mais ou menos <span>4</span> anos.",
+                "De <span>2015</span> a <span>2017</span> fiz um Ensino Médio e Técnico em <span>Automação Industrial</span> e não quis seguir na carreira,  mas tive meus primeiros contatos com programação: estudando <span>Ladder</span>, <span>Assembly</span> e <span>C</span>, o que me deu muito conhecimento lógico.",
+                "Em <span>2018</span> entrei, e estou, num curso superior de Tecnologia em <span>Jogos Digitais</span> no Senac-SP, onde tenho aprendido <span>Java</span>, <span>Python</span> e <span>C#</span> (com <span>Unity3D</span>).",
+                "Em <span>2019</span>, paralelamente à faculdade, entrei no projeto <span>Estação Hack</span>, do <span>Facebook</span>, onde aprendi o básico e essencial da programação para web: <span>HTML5</span>, <span>CSS3</span>, <span>Javascript</span> e <span>Python</span> com <span>Django</span>, meu primeiro framework.",
+                "Logo em seguida, fui admitido na <span>JP7</span> como estágiario em <span>Desenvolvimento Fullstack pra Web</span>, onde comecei a trabalhar em projetos de <span>grandes clientes</span> e aprendi e adquiri proeficiência sobre <span>Javascript</span>, <span>PHP</span>, <span>CSS moderno</span> e várias de suas tecnologias de ponta para se construir um site, como: <span>Node</span>, <span>Express</span>, <span>React</span>, <span>Redux</span>, <span>Next.js</span>, <span>Laravel</span>, <span>Sass</span>, <span>Bootstrap</span>, entre outros.",
+                "O grande foco da minha <span>carreira</span> é trabalhar com <span>desenvolvimento de jogos</span>, mas até lá, continuarei dando minha total <span>dedicação</span> para proporcionar as <span>melhores soluções</span> para nossos <span>clientes</span> e aprender as mais <span>recentes tecnologias.</span>"
+            ]
         }
     }
 }

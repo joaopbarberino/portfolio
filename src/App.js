@@ -7,10 +7,15 @@ import Header from './components/Header';
 import { AppProvider } from './components/AppContext';
 
 import Home from './sections/Home';
+import Who from './sections/Who';
 
 const StyledBody = styled.div`
   background-color: ${colors.dark};
   height: 200vh;
+
+  p span {
+    color: ${colors.lightPink};
+  }
 `;
 
 function App() {
@@ -41,6 +46,7 @@ function App() {
       <StyledBody>
         <Header />
         <Home />
+        <Who />
       </StyledBody>
     </AppProvider>
   );
