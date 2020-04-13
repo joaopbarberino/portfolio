@@ -8,13 +8,19 @@ import { AppProvider } from './components/AppContext';
 
 import Home from './sections/Home';
 import Who from './sections/Who';
+import Skills from './sections/Skills';
 
 const StyledBody = styled.div`
   background-color: ${colors.dark};
   height: 200vh;
+  font-family: 'Quicksand', sans-serif;
 
-  p span {
-    color: ${colors.lightPink};
+  p {
+    font-size: 16pt;
+    
+    span {
+      color: ${colors.lightPink};
+    }
   }
 `;
 
@@ -47,6 +53,7 @@ function App() {
         <Header />
         <Home />
         <Who />
+        <Skills />
       </StyledBody>
     </AppProvider>
   );

@@ -10,8 +10,6 @@ import HomeButton from '../components/HomeButton';
 const StyledHomeContainer = styled(Container)`
     text-align: center;
     color: ${colors.light};
-    font-family: 'Quicksand', sans-serif;
-    font-size: 16pt;
 `;
 
 const StyledProfilePicContainer = styled.div`
@@ -57,10 +55,11 @@ const StyledProfilePicContainer = styled.div`
     }
 `;
 
-const StyledDescription = styled.div`
+const StyledText = styled.div`
     margin-top: 70px;
 
     p {
+        font-size: 20pt!important;
         margin: 0;
     }
 `;
@@ -78,15 +77,15 @@ const Home = () => {
                     src={process.env.PUBLIC_URL + '/img/profile.jpg'}
                 />
             </StyledProfilePicContainer>
-            <StyledDescription>
-                {data[language].home.description.map((text, key) => {
+            <StyledText>
+                {data[language].home.text.map((text, key) => {
                     return (
                         <p key={key}>
                             {ReactHtmlParser(text)}
                         </p>
                     );
                 })}
-            </StyledDescription>
+            </StyledText>
             <HomeButton text={data[language].home.button} />
         </StyledHomeContainer>
     );

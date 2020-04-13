@@ -20,7 +20,7 @@
         ],
         "home": {
             "imgTitle": "My picture!",
-            "description": [
+            "text": [
                 "Hello! I'm <span>João</span>, Fullstack Web Developer and a wannabe Game Designer.",
                 "Learn more about me and my work here."
             ],
@@ -35,6 +35,23 @@
                 "On <span>2019</span>, aside college, I've entered on <span>Facebook's Estação Hack</span> project, where I've learned the basics and essentials for web development: <span>HTML5</span>, <span>CSS3</span>, <span>Javascript</span> and <span>Python</span> with <span>Django</span>, my first framework.",
                 "Thereafter, I've been admitted at <span>JP7</span> as <span>Fullstack Web Developer</span> intern, where I started to work on <span>big player's</span> projects where I learned and acquired proficiency on <span>Javascript</span>, <span>PHP</span>, <span>modern CSS</span> and a bunch of their edgy tecnologies to build an website, such as: <span>Node</span>, <span>Express</span>, <span>React</span>, <span>Redux</span>, <span>Next.js</span>, <span>Laravel</span>, <span>Sass</span>, <span>Bootstrap</span>, among others.",
                 "The great goal of my <span>carreer</span> is to work with <span>game development</span>, but until there, I'll keep giving my total <span>dedication</span> to provide the <span>best solutions</span> to our <span>clients</span> and to learn the new <span>high-end technologies.</span>"
+            ]
+        },
+        "skills": {
+            "title": "Skills",
+            "text": "On a more illustrated way, these are my <span>strengths</span>: how much I <span>know</span> about each topic and how much I feel <span>comfortable to apply</span> it on a daily basis.",
+            "strengths": [
+                {"name": "Communication/ Team Work", "value": 90},
+                {"name": "Agile Methodology", "value": 100},
+                {"name": "React <sup>(my favorite)</sup>", "value": 80},
+                {"name": "GraphQL", "value": 55},
+                {"name": "Laravel", "value": 80},
+                {"name": "Bootstrap", "value": 80},
+                {"name": "JavaScript", "value": 85},
+                {"name": "Python", "value": 40},
+                {"name": "PHP", "value": 45},
+                {"name": "Java", "value": 60},
+                {"name": "CSS", "value": 70}
             ]
         }
     },
@@ -59,7 +76,7 @@
         ],
         "home": {
             "imgTitle": "Minha foto!",
-            "description": [
+            "text": [
                 "Olá! Eu sou o <span>João</span>, Fullstack Web Developer e futuro Game Designer.",
                 "Conheça mais de mim e do meu trabalho aqui."
             ],
@@ -75,6 +92,24 @@
                 "Logo em seguida, fui admitido na <span>JP7</span> como estágiario em <span>Desenvolvimento Fullstack pra Web</span>, onde comecei a trabalhar em projetos de <span>grandes clientes</span> e aprendi e adquiri proeficiência sobre <span>Javascript</span>, <span>PHP</span>, <span>CSS moderno</span> e várias de suas tecnologias de ponta para se construir um site, como: <span>Node</span>, <span>Express</span>, <span>React</span>, <span>Redux</span>, <span>Next.js</span>, <span>Laravel</span>, <span>Sass</span>, <span>Bootstrap</span>, entre outros.",
                 "O grande foco da minha <span>carreira</span> é trabalhar com <span>desenvolvimento de jogos</span>, mas até lá, continuarei dando minha total <span>dedicação</span> para proporcionar as <span>melhores soluções</span> para nossos <span>clientes</span> e aprender as mais <span>recentes tecnologias.</span>"
             ]
+        },
+        "skills": {
+            "title": "Habilidades",
+            "text": "De uma forma mais ilustrada, esses são meus <span>pontos fortes</span>: o quanto eu <span>conheço</span> sobre cada tema e o quão <span>confortável</span> eu me sinto em <span>aplicá-lo</span> diariamente.",
+            "strengths": [
+                {"name": "Comunicação/ Trabalho em Equipe", "value": 90},
+                {"name": "Metodologias Ágeis", "value": 100},
+                {"name": "React <sup>(my favorite)</sup>", "value": 80},
+                {"name": "GraphQL", "value": 60},
+                {"name": "Laravel", "value": 80},
+                {"name": "Bootstrap", "value": 80},
+                {"name": "JavaScript", "value": 85},
+                {"name": "Python", "value": 40},
+                {"name": "PHP", "value": 45},
+                {"name": "Java", "value": 60},
+                {"name": "CSS", "value": 70}
+            ]
         }
+        
     }
 }

@@ -10,20 +10,21 @@ import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 
 const StyledWhoContainer = styled(Container)`
     color: ${colors.light};
+    margin-bottom: 70px;
+    text-align: justify;
 
     h1 {
         color: ${colors.lightPink};
     }
     svg {
         margin-right: 20px;
-        fill: ${colors.pink};
     }
 `;
 
 const StyledText = styled.div`
     border-left: 3px solid ${colors.pink};
     padding-left: 20px;
-    margin-top: 70px;
+    margin-top: 30px;
 
     p {
         margin-bottom: 25px;
@@ -43,7 +44,7 @@ const Who = () => {
                 {
                     data[language].who.text.map((element, key) => {
                         return (
-                            <p>
+                            <p key={key}>
                                 {ReactHtmlParser(element)}
                             </p>
                         );
