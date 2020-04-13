@@ -3,7 +3,7 @@ import ReactHTMLParser from 'react-html-parser';
 import styled from 'styled-components';
 import { Container, Progress } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faMousePointer, faHandPointer } from '@fortawesome/free-solid-svg-icons';
 import data from '../helpers/data.json';
 import { colors } from '../helpers/styles';
 import AppContext from '../components/AppContext';
@@ -25,6 +25,13 @@ const StyledSkillsContainer = styled(Container)`
 `;
 
 const StyledStrengthsContainer = styled.div`
+    svg {
+        margin-top: 5px;
+        margin-right: 8px;
+        color: ${colors.lightPink};
+        position: absolute;
+        right: 0;
+    }
     .strength {
         font-size: 18pt;
         color: ${colors.light};
@@ -33,6 +40,8 @@ const StyledStrengthsContainer = styled.div`
         .progress-container {
             margin-top: 5px;
             border: 3px solid ${colors.pink};
+            position: relative;
+
             /* padding: 3px; */
             
             .progress-bar {
@@ -58,14 +67,19 @@ const StyledStrengthsContainer = styled.div`
 `;
 
 const Skills = () => {
-    const { language } = useContext(AppContext);
+    const { language, mobile } = useContext(AppContext);
 
-    const parsedStrengths = data[language].skills.strengths.map(strength => strength = { ...strength, checked: false });
+    const parsedStrengths = [];
+    for (let language in data) {
+        parsedStrengths[language] = data[language].skills.strengths.map(strength => strength = { ...strength, checked: false });
+    }
     const [strengths, setStrengths] = useState(parsedStrengths);
 
     const checkBar = key => {
-        strengths[key].checked = true;
-        setStrengths([...strengths]);
+        for (let language in data) {
+            strengths[language][key].checked = true;
+        }
+        setStrengths({ ...strengths });
     }
 
     return (
@@ -78,19 +92,33 @@ const Skills = () => {
             </p>
             <StyledStrengthsContainer>
                 {
-                    strengths.map((strength, key) => {
+                    strengths[language].map((strength, key) => {
                         return (
-                            <div key={key} className='strength' onMouseOver={() => checkBar(key)}>
+                            <div
+                                key={key}
+                                className='strength'
+                                onMouseOver={() => checkBar(key)}
+                            >
                                 {ReactHTMLParser(strength.name)}
                                 <div className='progress-container'>
-                                    <Progress bar animated value={strength.checked ? strength.value : 0} />
+                                    {(key === 0) &&
+                                        <FontAwesomeIcon
+                                            icon={mobile ? faHandPointer : faMousePointer}
+                                            className={strengths[language][key].checked ? 'd-none' : ''}
+                                        />
+                                    }
+                                    <Progress
+                                        bar
+                                        animated
+                                        value={strength.checked ? strength.value : 0}
+                                    />
                                 </div>
                             </div>
                         );
                     })
                 }
             </StyledStrengthsContainer>
-        </StyledSkillsContainer>
+        </StyledSkillsContainer >
     );
 }
 

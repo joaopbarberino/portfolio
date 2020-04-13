@@ -99,8 +99,8 @@
             "strengths": [
                 {"name": "Comunicação/ Trabalho em Equipe", "value": 90},
                 {"name": "Metodologias Ágeis", "value": 100},
-                {"name": "React <sup>(my favorite)</sup>", "value": 80},
-                {"name": "GraphQL", "value": 60},
+                {"name": "React <sup>(meu favorito)</sup>", "value": 80},
+                {"name": "GraphQL", "value": 55},
                 {"name": "Laravel", "value": 80},
                 {"name": "Bootstrap", "value": 80},
                 {"name": "JavaScript", "value": 85},

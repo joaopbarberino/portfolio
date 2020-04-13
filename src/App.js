@@ -26,7 +26,7 @@ const StyledBody = styled.div`
 
 function App() {
   const [language, setLanguage] = useState('en');
-  const [mobile, setMobile] = useState(true);
+  const [mobile, setMobile] = useState(undefined);
   const toggleLanguage = () => {
     setLanguage(language => (language === 'en' ? 'pt' : 'en'));
   }
