@@ -26,12 +26,18 @@ const StyledSkillsContainer = styled(Container)`
 
 const StyledStrengthsContainer = styled.div`
     svg {
-        margin-top: 5px;
+        margin-top: 8px;
         margin-right: 8px;
         color: ${colors.lightPink};
         position: absolute;
         right: 0;
+        transition: all 1s;
     }
+
+    .opacity-0 {
+        opacity: 0;
+    }
+
     .strength {
         font-size: 18pt;
         color: ${colors.light};
@@ -103,8 +109,9 @@ const Skills = () => {
                                 <div className='progress-container'>
                                     {(key === 0) &&
                                         <FontAwesomeIcon
+                                            size='xs'
                                             icon={mobile ? faHandPointer : faMousePointer}
-                                            className={strengths[language][key].checked ? 'd-none' : ''}
+                                            className={strengths[language][key].checked ? 'opacity-0' : ''}
                                         />
                                     }
                                     <Progress
