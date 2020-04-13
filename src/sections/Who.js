@@ -10,8 +10,8 @@ import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 
 const StyledWhoContainer = styled(Container)`
     color: ${colors.light};
-    margin-bottom: 70px;
     text-align: justify;
+    padding-top: 90px;
 
     h1 {
         color: ${colors.lightPink};

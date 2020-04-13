@@ -19,22 +19,24 @@ const StyledNavbarContainer = styled(Container)`
     padding: 0;
 
     .nav-item {
-      transition: all .2s;
-      padding: 15px 20px;
-      
       a {
-          color: ${colors.pink}; 
-          font-size: 14pt;
+        transition: all .2s;
+        padding: 15px 20px;
+        color: ${colors.pink}; 
+        font-size: 14pt;
       }
       
       &:hover:not(.mobile-language-button) {
-        padding: 20px 25px;
-
+        background-color: ${colors.pink};
         a {
           color: ${colors.light};
           font-size: 16pt;
+          padding: 20px 25px;
         }
-        background-color: ${colors.pink};
+      }
+
+      &:focus {
+        outline: none;
       }
     }
 
@@ -120,7 +122,7 @@ const Header = () => {
                 className='d-none d-md-block'
                 onClick={() => toggleLanguage()}
               >
-                <NavLink href='#projects'>
+                <NavLink href='#'>
                   {language === 'en' ? 'PT' : 'EN'}
                 </NavLink>
               </NavItem>
@@ -130,7 +132,7 @@ const Header = () => {
             className='d-md-none mobile-language-button'
             onClick={() => toggleLanguage()}
           >
-            <NavLink href='#projects'>
+            <NavLink href='#'>
               {language === 'en' ? 'PT' : 'EN'}
             </NavLink>
           </NavItem>

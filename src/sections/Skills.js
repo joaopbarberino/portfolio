@@ -9,6 +9,8 @@ import { colors } from '../helpers/styles';
 import AppContext from '../components/AppContext';
 
 const StyledSkillsContainer = styled(Container)`
+    padding-top: 90px;
+
     h1 {
         color: ${colors.lightPink};
 

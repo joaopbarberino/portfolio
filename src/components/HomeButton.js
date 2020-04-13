@@ -105,7 +105,7 @@ const StyledButton = styled.a`
 
 const HomeButton = props => {
     return (
-        <StyledButton href='#' role='button'>
+        <StyledButton href='#who' role='button'>
             <span>{props.text}</span>
             <div className='icon'>
                 <FontAwesomeIcon icon={faLongArrowAltRight} />
