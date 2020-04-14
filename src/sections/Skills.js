@@ -11,14 +11,6 @@ import AppContext from '../components/AppContext';
 const StyledSkillsContainer = styled(Container)`
     padding-top: 90px;
 
-    h1 {
-        color: ${colors.lightPink};
-
-        svg {
-            margin-right: 20px;
-        }
-    }
-
     p {
         margin-top: 30px;
         color: ${colors.light};

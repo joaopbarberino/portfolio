@@ -42,8 +42,8 @@ const StyledNavbarContainer = styled(Container)`
 
     .mobile-language-button {
       position: absolute;
-      right: 0;
-      top: 0;
+      right: 5px;
+      top: 5px;
       list-style: none;
     }
   }

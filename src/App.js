@@ -9,6 +9,7 @@ import { AppProvider } from './components/AppContext';
 import Home from './sections/Home';
 import Who from './sections/Who';
 import Skills from './sections/Skills';
+import Projects from './sections/Projects';
 
 const StyledBody = styled.div`
   background-color: ${colors.dark};
@@ -22,6 +23,14 @@ const StyledBody = styled.div`
       color: ${colors.lightPink};
     }
   }
+
+  h1 {
+    color: ${colors.lightPink};
+
+    svg {
+      margin-right: 20px;
+    }
+}
 `;
 
 function App() {
@@ -54,6 +63,7 @@ function App() {
         <Home />
         <Who />
         <Skills />
+        <Projects />
       </StyledBody>
     </AppProvider>
   );

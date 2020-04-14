@@ -12,13 +12,6 @@ const StyledWhoContainer = styled(Container)`
     color: ${colors.light};
     text-align: justify;
     padding-top: 90px;
-
-    h1 {
-        color: ${colors.lightPink};
-    }
-    svg {
-        margin-right: 20px;
-    }
 `;
 
 const StyledText = styled.div`
