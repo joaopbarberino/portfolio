@@ -3,7 +3,7 @@ import ReactHTMLParser from 'react-html-parser';
 import styled from 'styled-components';
 import { Container } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 import data from '../helpers/data.json';
 import { colors } from '../helpers/styles';
 import AppContext from '../components/AppContext';
@@ -26,7 +26,7 @@ const Projects = () => {
     return (
         <StyledProjectsContainer id='projects'>
             <h1>
-                <FontAwesomeIcon icon={faProjectDiagram} />{data[language].projects.title}
+                <FontAwesomeIcon icon={faCode} />{data[language].projects.title}
             </h1>
             <p>
                 {ReactHTMLParser(data[language].projects.text)}
