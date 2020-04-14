@@ -24,7 +24,8 @@ const StyledContactContainer = styled(Container)`
 
         a {
             padding: 40px 20px 10px;
-            margin-right: 50px;
+            margin-right: 25px;
+            margin-left: 25px;
             transition: all .5s;
 
             &:hover {

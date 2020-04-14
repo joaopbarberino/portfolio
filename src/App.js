@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { colors, breakpoints } from './helpers/styles';
-import './index.scss'
 
-import Header from './components/Header';
+import './index.scss'
+import { colors, breakpoints } from './helpers/styles';
 import { AppProvider } from './components/AppContext';
 
+import Header from './components/Header';
 import Home from './sections/Home';
 import Who from './sections/Who';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
+import Footer from './components/Footer';
 
 const StyledBody = styled.div`
   background-color: ${colors.dark};
@@ -67,6 +68,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
       </StyledBody>
     </AppProvider>
   );
