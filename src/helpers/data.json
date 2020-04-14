@@ -16,6 +16,10 @@
             {
                 "text": "Projects",
                 "link": "#projects"
+            },
+            {
+                "text": "Contact",
+                "link": "#contact"
             }
         ],
         "home": {
@@ -65,6 +69,10 @@
                 {"name": "Multicare Pharma", "link": "https://www.google.com.br", "img": "/img/multicare.png", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel mi eu risus euismod euismod. Etiam nulla arcu, fermentum consequat lobortis sit amet, aliquam vel ligula. Mauris tincidunt dolor non volutpat accumsan. Vivamus lobortis, enim non aliquam convallis, tellus turpis lacinia libero, ac ultrices ipsum orci sit amet diam. Duis vitae interdum dolor, ut laoreet massa. Donec ut ultricies lectus, at pellentesque nisl."},
                 {"name": "Multicare Pharma", "link": "https://www.google.com.br", "img": "/img/multicare.png", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel mi eu risus euismod euismod. Etiam nulla arcu, fermentum consequat lobortis sit amet, aliquam vel ligula. Mauris tincidunt dolor non volutpat accumsan. Vivamus lobortis, enim non aliquam convallis, tellus turpis lacinia libero, ac ultrices ipsum orci sit amet diam. Duis vitae interdum dolor, ut laoreet massa. Donec ut ultricies lectus, at pellentesque nisl."}
             ]
+        },
+        "contact": {
+            "title": "Contact",
+            "text": "If you want to <span>talk</span>, you can find me on <span>LinkedIn</span> or send me an <span>email</span>:"
         }
 
     },
@@ -85,6 +93,10 @@
             {
                 "text": "Projetos",
                 "link": "#projects"
+            },
+            {
+                "text": "Contato",
+                "link": "#contato"
             }
         ],
         "home": {
@@ -134,6 +146,10 @@
                 {"name": "Multicare Pharma", "link": "https://www.google.com.br", "img": "/img/multicare.png", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel mi eu risus euismod euismod. Etiam nulla arcu, fermentum consequat lobortis sit amet, aliquam vel ligula. Mauris tincidunt dolor non volutpat accumsan. Vivamus lobortis, enim non aliquam convallis, tellus turpis lacinia libero, ac ultrices ipsum orci sit amet diam. Duis vitae interdum dolor, ut laoreet massa. Donec ut ultricies lectus, at pellentesque nisl."},
                 {"name": "Multicare Pharma", "link": "https://www.google.com.br", "img": "/img/multicare.png", "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel mi eu risus euismod euismod. Etiam nulla arcu, fermentum consequat lobortis sit amet, aliquam vel ligula. Mauris tincidunt dolor non volutpat accumsan. Vivamus lobortis, enim non aliquam convallis, tellus turpis lacinia libero, ac ultrices ipsum orci sit amet diam. Duis vitae interdum dolor, ut laoreet massa. Donec ut ultricies lectus, at pellentesque nisl."}
             ]
+        },
+        "contact": {
+            "title": "Contato",
+            "text": "Caso queira <span>conversar</span>, você pode me encontrar no <span>LinkedIn</span> ou me mandar um <span>email</span>:"
         }
         
     }

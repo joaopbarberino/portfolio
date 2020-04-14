@@ -98,7 +98,7 @@ const Header = () => {
 
   return (
     <StyledNavbarContainer fluid>
-      <Navbar color={colors.dark} expand='md' fixed='top'>
+      <Navbar color={colors.dark} expand='lg' fixed='top'>
         <Container>
           <StyledNavbarToggler onClick={toggle}>
             <div className={isOpen ? 'animation1' : 'bar1'} />

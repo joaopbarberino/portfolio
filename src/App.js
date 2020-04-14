@@ -10,9 +10,11 @@ import Home from './sections/Home';
 import Who from './sections/Who';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Contact from './sections/Contact';
 
 const StyledBody = styled.div`
   background-color: ${colors.dark};
+  color: ${colors.light};
   height: 200vh;
   font-family: 'Quicksand', sans-serif;
 
@@ -64,6 +66,7 @@ function App() {
         <Who />
         <Skills />
         <Projects />
+        <Contact />
       </StyledBody>
     </AppProvider>
   );

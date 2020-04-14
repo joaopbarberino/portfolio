@@ -7,5 +7,5 @@ export const colors = {
 }
 
 export const breakpoints = {
-    mobileMax: '767px', 
+    mobileMax: '991px', 
 }
