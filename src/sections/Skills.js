@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useRef, useEffect, useCallback } from 'react';
 import ReactHTMLParser from 'react-html-parser';
 import styled from 'styled-components';
 import { Container, Progress } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faMousePointer, faHandPointer } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faMousePointer } from '@fortawesome/free-solid-svg-icons';
 import data from '../helpers/data.json';
 import { colors } from '../helpers/styles';
 import AppContext from '../components/AppContext';
@@ -68,6 +68,9 @@ const StyledStrengthsContainer = styled.div`
 
 const Skills = () => {
     const { language, mobile } = useContext(AppContext);
+    const mobileAnimationStartPoint = useRef();
+    const [containerY, setContainerY] = useState(undefined);
+    const [scrollY, setScrollY] = useState(window.scrollY);
 
     const parsedStrengths = [];
     for (let language in data) {
@@ -75,19 +78,50 @@ const Skills = () => {
     }
     const [strengths, setStrengths] = useState(parsedStrengths);
 
-    const checkBar = key => {
+    const checkBar = useCallback(key => {
+        let changes = 0;
+
         for (let language in data) {
-            strengths[language][key].checked = true;
+            if (!strengths[language][key].checked) {
+                strengths[language][key].checked = true;
+                changes++;
+            }
         }
-        setStrengths({ ...strengths });
+
+        if (changes > 0) {
+            setStrengths({ ...strengths });
+        }
+    }, [strengths]);
+
+    const updateScroll = () => {
+        setScrollY(window.scrollY);
     }
+
+    useEffect(() => {
+        if (mobile) {
+            if (scrollY > containerY) {
+                strengths[language].map((strength, key) => checkBar(key));
+            }
+
+            window.addEventListener('scroll', updateScroll);
+            return function cleanup() {
+                window.removeEventListener('scroll', updateScroll);
+            }
+        }
+    }, [mobile, language, scrollY, containerY, strengths, checkBar]);
+
+    useEffect(() => {
+        if (mobileAnimationStartPoint.current) {
+            setContainerY(mobileAnimationStartPoint.current.offsetTop);
+        }
+    }, [mobileAnimationStartPoint]);
 
     return (
         <StyledSkillsContainer id='skills'>
             <h1>
                 <FontAwesomeIcon icon={faStar} />{data[language].skills.title}
             </h1>
-            <p>
+            <p ref={mobileAnimationStartPoint}>
                 {ReactHTMLParser(data[language].skills.text)}
             </p>
             <StyledStrengthsContainer>
@@ -97,15 +131,15 @@ const Skills = () => {
                             <div
                                 key={key}
                                 className='strength'
-                                onMouseOver={() => checkBar(key)}
+                                onMouseOver={mobile ? undefined : () => checkBar(key)}
                             >
                                 {ReactHTMLParser(strength.name)}
                                 <div className='progress-container'>
-                                    {(key === 0) &&
+                                    {(key === 0 && !mobile) &&
                                         <FontAwesomeIcon
                                             size='xs'
-                                            icon={mobile ? faHandPointer : faMousePointer}
-                                            className={strengths[language][key].checked ? 'opacity-0' : ''}
+                                            icon={faMousePointer}
+                                            className={strengths[language][0].checked ? 'opacity-0' : ''}
                                         />
                                     }
                                     <Progress
