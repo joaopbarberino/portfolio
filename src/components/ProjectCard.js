@@ -57,7 +57,7 @@ const StyledRow = styled(Row)`
             position: absolute;
             color: ${colors.light};
             bottom: 10px;
-            transition: all .2s;
+            transition: all .7s;
 
             &.right {
                 right: 10px;
@@ -78,21 +78,8 @@ const StyledRow = styled(Row)`
         &:hover {
             transform: rotateX(-180deg);
 
-            img {
+            img, img + svg {
                 opacity: 0.1;
-            }
-            
-            img + svg {
-                opacity: 0.1;
-                bottom: 2px;
-
-                &.right {
-                    right: 2px;
-                }
-
-                &.left {
-                    left: 2px;
-                }
             }
         }
     }
