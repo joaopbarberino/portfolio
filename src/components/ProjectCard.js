@@ -26,6 +26,13 @@ const StyledRow = styled(Row)`
         opacity: 0;
     }
 
+    p {
+        text-align: justify;
+        span {
+            font-size: 16pt;
+        }
+    }
+
     .img-container {
         background-color: ${colors.pink};
         border: 2px solid ${colors.pink};
@@ -127,7 +134,7 @@ const ProjectCard = ({ project, index }) => {
                 lg={7}
             >
                 <h3>{project.name}</h3>
-                <p className='text-justify'>{ReactHTMLParser(project.text)}</p>
+                <p>{ReactHTMLParser(project.text)}</p>
             </Col>
         </StyledRow>
     );
