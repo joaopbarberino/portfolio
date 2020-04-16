@@ -30,24 +30,22 @@ const StyledRow = styled(Row)`
         background-color: ${colors.pink};
         border: 2px solid ${colors.pink};
         position: relative;
+        transition: all 1.1s;
 
         a {
             text-decoration: none;
             height: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
         }
 
         img {
             width: 100%;
-            transition: all .3s;
+            transition: all 0.7s;
             z-index: 1;
         
             &.border-right-rd {
-                border-bottom-right-radius: 90px; 
-            border-bottom-right-radius: 90px; 
-                border-bottom-right-radius: 90px; 
+                border-bottom-right-radius: 90px;  
             }
 
             &.border-left-rd {
@@ -74,25 +72,18 @@ const StyledRow = styled(Row)`
             font-size: 100%;
             color: ${colors.light};
             align-self: center;
+            transform: rotateX(-180deg);
         }
 
         &:hover {
-            img {
-                opacity: 0;
-                
-                &.border-right-rd {
-                    transform: translateX(-75%);
-                    border-bottom-right-radius: 90px; 
-                }
+            transform: rotateX(-180deg);
 
-                &.border-left-rd {
-                    transform: translateX(75%);
-                    border-bottom-left-radius: 90px;
-                }
+            img {
+                opacity: 0.1;
             }
             
             img + svg {
-                opacity: 0;
+                opacity: 0.1;
                 bottom: 2px;
 
                 &.right {
