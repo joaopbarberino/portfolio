@@ -26,7 +26,7 @@ const StyledRow = styled(Row)`
         opacity: 0;
     }
 
-    p {
+    div p {
         text-align: justify;
         span {
             font-size: 16pt;
