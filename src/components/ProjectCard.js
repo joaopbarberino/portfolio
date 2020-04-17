@@ -50,6 +50,7 @@ const StyledRow = styled(Row)`
             width: 100%;
             transition: all 0.7s;
             z-index: 1;
+            align-self: center;
         
             &.border-right-rd {
                 border-bottom-right-radius: 90px;  
