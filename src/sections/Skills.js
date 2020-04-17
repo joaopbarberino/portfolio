@@ -3,7 +3,7 @@ import ReactHTMLParser from 'react-html-parser';
 import styled from 'styled-components';
 import { Container, Progress } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faMousePointer } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import data from '../helpers/data.json';
 import { colors } from '../helpers/styles';
 import AppContext from '../components/AppContext';
@@ -19,15 +19,6 @@ const StyledSkillsContainer = styled(Container)`
 `;
 
 const StyledStrengthsContainer = styled.div`
-    svg {
-        margin-top: 8px;
-        margin-right: 8px;
-        color: ${colors.lightPink};
-        position: absolute;
-        right: 0;
-        transition: all 1s;
-    }
-
     .opacity-0 {
         opacity: 0;
     }
@@ -98,15 +89,13 @@ const Skills = () => {
     }
 
     useEffect(() => {
-        if (mobile) {
-            if (scrollY > containerY) {
-                strengths[language].map((strength, key) => checkBar(key));
-            }
+        if (scrollY > containerY) {
+            strengths[language].map((strength, key) => checkBar(key));
+        }
 
-            window.addEventListener('scroll', updateScroll);
-            return function cleanup() {
-                window.removeEventListener('scroll', updateScroll);
-            }
+        window.addEventListener('scroll', updateScroll);
+        return function cleanup() {
+            window.removeEventListener('scroll', updateScroll);
         }
     }, [mobile, language, scrollY, containerY, strengths, checkBar]);
 
@@ -131,17 +120,9 @@ const Skills = () => {
                             <div
                                 key={key}
                                 className='strength'
-                                onMouseOver={mobile ? undefined : () => checkBar(key)}
                             >
                                 {ReactHTMLParser(strength.name)}
                                 <div className='progress-container'>
-                                    {(key === 0 && !mobile) &&
-                                        <FontAwesomeIcon
-                                            size='xs'
-                                            icon={faMousePointer}
-                                            className={strengths[language][0].checked ? 'opacity-0' : ''}
-                                        />
-                                    }
                                     <Progress
                                         bar
                                         animated
