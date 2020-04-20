@@ -2,7 +2,7 @@ export const colors = {
     dark: '#252525',
     light: '#f7f7f7',
     pink: '#af1d57',
-    lightPink: '#c04c7a',
+    lightPink: '#e62773',
     darkPink: '#6e1337'
 }
 
