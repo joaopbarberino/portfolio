@@ -34,10 +34,10 @@
             "title": "Who am I?",
             "text": [
                 "My name is <span>João Pedro Barberino</span>, <span>19</span> years old, living in <span>São Paulo - Brazil</span> and have been coding for about <span>4</span> years.",
-                "From <span>2015</span> to <span>2017</span> I took a Technical High School on <span>Industrial Automation</span> where I had my first contacts with code: studying <span>Ladder</span>, <span>Assembly</span> and <span>C</span>, which gave me a lot of <span>logical thinking</span>.",
-                "In <span>2018</span> I've started an Applied Sciences in <span>Digital Games</span> course on Senac-SP, where I've been learning <span>Java</span>, <span>Python</span> and <span>C#</span> (with <span>Unity3D</span>).",
+                "From <span>2015</span> to <span>2017</span> I took a Technical High School on <span>Industrial Automation</span> where I had my first contacts with coding: studying <span>Ladder</span>, <span>Assembly</span> and <span>C</span>, which gave me a lot of <span>logical thinking</span>.",
+                "Since <span>2018</span> I've been doing an Applied Sciences in <span>Digital Games</span> course on Senac-SP, where I've been learning <span>Java</span>, <span>Python</span> and <span>C#</span> (with <span>Unity3D</span>).",
                 "In <span>2019</span>, aside from college, I entered on <span>Facebook's Estação Hack</span> project, where I learned the basics and essentials for web development: <span>HTML5</span>, <span>CSS3</span>, <span>Javascript</span> and <span>Python</span> with <span>Django</span>, my first framework.",
-                "Thereafter, I've been admitted at <span>JP7</span> as <span>Fullstack Web Developer</span>, where I've started to work on <span>big player's</span> projects. I've learned and acquired proficiency on <span>Javascript</span>, <span>PHP</span>, <span>modern CSS</span> and a bunch of cutting edgy technologies to build web apps, such as <span>Node</span>, <span>Express</span>, <span>React</span>, <span>Redux</span>, <span>Next.js</span>, <span>Laravel</span>, <span>Sass</span>, <span>Bootstrap</span>, <span>GitHub</span>, among others.",
+                "Thereafter, I was admitted at <span>JP7</span> as <span>Fullstack Web Developer</span>, where I started to work on <span>big player's</span> projects. I've learned and acquired proficiency on <span>Javascript</span>, <span>PHP</span>, <span>modern CSS</span> and a bunch of cutting edgy technologies to build web apps, such as <span>Node</span>, <span>Express</span>, <span>React</span>, <span>Redux</span>, <span>Next.js</span>, <span>Laravel</span>, <span>Sass</span>, <span>Bootstrap</span>, <span>GitHub</span>, among others.",
                 "In <span>JP7</span>, I constantly take some <span>Udemy</span> courses as part of my training. I've already done some, such as <span>The Web Developer Bootcamp</span> by <span>Colt Steele</span>, <span>Modern React with Redux</span>, <span>The Coding Interview Bootcamp: Algorithms + Data Structures</span> and <span>TypeScript The Complete Developers Guide</span>, which I'm currently doing, by <span>Stephen Grider</span>.",
                 "The great goal of my <span>career</span> is to work with <span>game development</span>, but until there, I'll keep giving my total <span>dedication</span> to provide the <span>best solutions</span> to our <span>clients</span> and to learn the new <span>high-end technologies</span>."
             ]
@@ -100,25 +100,25 @@
                     "name": "CI - Central de Intercâmbio",
                     "link": "https://www.ci.com.br",
                     "img": "/img/ci.png",
-                    "text": "One of our <span>biggest clients</span> at JP7, <span>CI is the biggest name on exchange programs in Brazil</span> and even has some stores in other countries. We’ve been <span>responsible for their sites for years</span>. There, I’ve been providing <span>maintenance</span> since I’ve entered, taking <span>requests from the client</span>, such as add new pages, edit old ones and even delete or change their locations – following the system which was already established. It's made mainly on <span>Laravel</span>, <span>Bootstrap</span> and <span>Javascript</span>, using an <span>intern CMS</span> to edit data. I’ve been also involved in the environment configuration to <span>test</span> some functionalities on <span>React</span>."
+                    "text": "One of our <span>biggest clients</span> at JP7, <span>CI is the biggest name on exchange programs in Brazil</span> and even has some units in other countries. We’ve been <span>responsible for their sites for years</span>. There, I’ve been providing <span>maintenance</span> since I entered, taking <span>requests from the client</span>, such as add new pages, edit old ones and even delete or change their locations – following the system which was already established. It's made mainly on <span>Laravel</span>, <span>Bootstrap</span> and <span>Javascript</span>, using an <span>intern CMS</span> to edit data. I’ve been also involved in the environment configuration to <span>test</span> some functionalities on <span>React</span>."
                 },
                 {
                     "name": "CI - Feira Trabalhar e Estudar",
                     "link": "https://feiratrabalhar.ci.com.br",
                     "img": "/img/ci-feira.png",
-                    "text": "It’s a <span>hotsite</span> developed some time ago to publicize the company’s <span>annual event</span>. By the end of <span>2019</span>, I was <span>responsible to update the whole site structure</span>, mainly the styles, to the new layout. Uses the <span>very same technologies</span> of the main site."
+                    "text": "It’s a <span>hotsite</span> developed some time ago to publicize the company’s <span>annual event</span>. By the end of <span>2019</span>, I was <span>responsible to update the whole website structure</span>, mainly the styles, to the new layout. Uses the <span>very same technologies</span> of the main website."
                 },
                 {
                     "name": "CI - Intercâmbio Zion",
                     "link": "https://intercambiozion.com.br",
                     "img": "/img/ci-zion.png",
-                    "text": "The client has <span>requested to another provider</span> a simple <span>Wordpress</span> hotsite to test this <span>new product</span>. Sometime later <span>2019</span>, they <span>asked us</span> to control it by the <span>CMS already provided and integrated to the other company’s sites</span>. As we <span>avoid</span> work with <span>Wordpress</span>, I was <span>responsible to redo the site on React</span>, using <span>Styled Components</span>, <span>Redux-form</span>, <span>Apollo</span>, <span>GraphQL</span> and <span>Next.js for SSR</span> as well."
+                    "text": "The client has <span>requested another provider</span> a simple <span>Wordpress</span> hotsite to test this <span>new product</span>. Sometime later <span>2019</span>, they <span>asked us</span> to control it by the <span>CMS already provided and integrated to the other company’s websites</span>. As we <span>avoid</span> work with <span>Wordpress</span>, I was <span>responsible to redo the website on React</span>, using <span>Styled Components</span>, <span>Redux-form</span>, <span>Apollo</span>, <span>GraphQL</span> and <span>Next.js for SSR</span> as well."
                 },
                 {
                     "name": "Abipe",
                     "link": "https://www.abipe.org.br",
                     "img": "/img/abipe.png",
-                    "text": "A <span>no-profit company of CI Group</span>, their site counts with an exclusive area to its users, where they realize some <span>financial transactions</span>. By the start of <span>2020</span>, I was <span>responsible to change the PagSeguro</span> (a kind of Brazillian PayPal, responsible for the payments) <span>PHP library</span> of the <span>old version</span> to the <span>new one</span>, which resulted on an <span>extensive review and adaptation of the already established payment flux</span>."
+                    "text": "A <span>no-profit company of CI Group</span>, their website counts with an exclusive area to its users, where they realize some <span>financial transactions</span>. By the start of <span>2020</span>, I was <span>responsible to change the PagSeguro</span> (a kind of Brazillian PayPal, responsible for the payments) <span>PHP library</span> of the <span>old version</span> to the <span>new one</span>, which resulted on an <span>extensive review and adaptation of the already established payment flux</span>."
                 },
                 {
                     "name": "Multicarepharma",
@@ -130,7 +130,7 @@
                     "name": "JP7",
                     "link": "https://www.jp7.com.br",
                     "img": "/img/jp7.png",
-                    "text": "As part of my <span>role</span> in the company, by the start of <span>2020</span>, I was <span>responsible to update the PHP and Node of all our projects</span>, which resulted in <span>various packages and unit tests updates and reviews and errors solutions</span>. You can learn more about them on the company site!"
+                    "text": "As part of my <span>role</span> in the company, by the start of <span>2020</span>, I was <span>responsible to update the PHP and Node of all our projects</span>, which resulted in <span>various packages and unit tests updates and reviews and errors solutions</span>. You can learn more about them on the company website!"
                 },
                 {
                     "name": "Fight, Lord Willow!",
@@ -151,7 +151,7 @@
                     "text": "Developed in a <span>group</span> to a <span>Game Jam</span> in <span>2020</span>, it's an <span>Endless Runner/ Platformer game</span>, about the “Cold” theme, for <span>Android</span>. <span>Made in C# with Unity 3D engine</span>. We got to implement all that we planned. I didn’t actively participate in the programming of this one, but I was <span>responsible for part of the game design</span> and for the <span>initial implementation</span> of the <span>score system</span>, besides being present from the start to the end of the project. You can <span>play it for free</span> by <span>downloading</span> and <span>installing the .apk</span> file."
                 },
                 {
-                    "name": "This site!",
+                    "name": "This website!",
                     "link": "https://github.com/joaopbarberino",
                     "img": "/img/github.png",
                     "text": "<span>Completely developed by me</span>, this time I even took the risk to make the layout! Made with <span>React</span> and <span>Styled Components</span>, which are <span>my favorite technologies at this moment</span>. You can see the source code, as well as of <span>other projects and studies</span> of mine that are not mentioned here, at my <span>GitHub</span>."
