@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b2d44052.chunk.css",
-    "main.js": "/portfolio/static/js/main.d1335488.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.d1335488.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.d597d31e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.d597d31e.js.map",
-    "static/js/2.1a0b13be.chunk.js": "/portfolio/static/js/2.1a0b13be.chunk.js",
-    "static/js/2.1a0b13be.chunk.js.map": "/portfolio/static/js/2.1a0b13be.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.88616e89.chunk.css",
+    "main.js": "/portfolio/static/js/main.edbb2e22.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.edbb2e22.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.43d9a0ba.js.map",
+    "static/js/2.960dfd35.chunk.js": "/portfolio/static/js/2.960dfd35.chunk.js",
+    "static/js/2.960dfd35.chunk.js.map": "/portfolio/static/js/2.960dfd35.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.5662f69267edc3f62d383d5f94920f78.js": "/portfolio/precache-manifest.5662f69267edc3f62d383d5f94920f78.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.b2d44052.chunk.css.map": "/portfolio/static/css/main.b2d44052.chunk.css.map",
-    "static/js/2.1a0b13be.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1a0b13be.chunk.js.LICENSE.txt"
+    "static/css/main.88616e89.chunk.css.map": "/portfolio/static/css/main.88616e89.chunk.css.map",
+    "static/js/2.960dfd35.chunk.js.LICENSE.txt": "/portfolio/static/js/2.960dfd35.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d597d31e.js",
-    "static/js/2.1a0b13be.chunk.js",
-    "static/css/main.b2d44052.chunk.css",
-    "static/js/main.d1335488.chunk.js"
+    "static/js/runtime-main.43d9a0ba.js",
+    "static/js/2.960dfd35.chunk.js",
+    "static/css/main.88616e89.chunk.css",
+    "static/js/main.edbb2e22.chunk.js"
   ]
 }
